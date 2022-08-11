@@ -1,11 +1,14 @@
 import { Wrapper } from '../components/Wrapper';
 import { mainPageData } from '../___mock___/pagesData';
+import { Breadcrumbs } from '../components/Breadcrumbs';
 
 const Index = () => {
+  const {h1, ...metaData } = mainPageData;
 
   return (
-    <Wrapper {...mainPageData}>
-        <h1>Truck1.eu - Main page</h1>
+    <Wrapper {...metaData}>
+      <Breadcrumbs />
+        <h1>{h1}</h1>
     </Wrapper>
   );
 };

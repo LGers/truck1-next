@@ -1,0 +1,28 @@
+.navigation {
+  background: #ffffff;
+
+  ul {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    gap: 32px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8D8D8D;
+    text-transform: uppercase;
+
+    &:hover {
+      color: black;
+      transition: 0.15s ease;
+    }
+  }
+}

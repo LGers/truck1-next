@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &Logo {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ffffff;
+    height: 100px;
+    padding-left: 16px;
+
+    & a {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+}
+

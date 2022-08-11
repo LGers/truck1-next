@@ -1,0 +1,33 @@
+.breadcrumbs {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2F80ED;
+
+  ul {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    gap: 8px;
+  }
+
+  li {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    &:nth-last-child(1) {
+      color: #000000;
+    }
+
+    & a {
+      color: #2F80ED;
+      text-decoration: none;
+    }
+
+    & .arrow {
+      color: black;
+      cursor: default;
+    }
+  }
+}
