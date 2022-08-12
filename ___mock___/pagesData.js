@@ -3,7 +3,14 @@ export const mainPageData = {
   keywords: 'trucks, sale, buy, sell, prices, dealers, used, new, marketplace',
   description: 'Browse 150 000 offers of trucks for sale in Europe. Buy new and used trucks, trailers, vans and machinery in one place for fair prices at Truck1',
   h1: "Truck1.eu - Main page",
-}
+};
+
+export const trucksPageData = {
+  title: 'Used trucks for sale, best prices for vehicles at Truck1',
+  keywords: 'trucks, sale, buy, sell, prices, dealers, used, new, marketplace',
+  description: 'Browse 150 000 offers of trucks for sale in Europe. Buy new and used trucks, trailers, vans and machinery in one place for fair prices at Truck1',
+  h1: "Truck1.eu - Trucks page",
+};
 
 export const catalogData = {
   "page_meta": {
@@ -14,33 +21,33 @@ export const catalogData = {
   },
   "nav": [
     {
-      "href": "#",
+      "href": "/",
       "text": "Home"
     },
     {
-      "href": "#",
+      "href": "trucks",
       "text": "Trucks"
     },
     {
-      "href": "#",
+      "href": "about",
       "text": "About Us"
     },
     {
-      "href": "#",
+      "href": "contact",
       "text": "Contact"
     }
   ],
   "breadcrumbs": [
     {
-      "href": "#",
+      "href": "/",
       "text": "Home"
     },
     {
-      "href": "#",
+      "href": "trucks",
       "text": "Trucks"
     },
     {
-      "href": "#",
+      "href": "trucks/daf",
       "text": "DAF"
     }
   ],
@@ -168,4 +175,4 @@ export const catalogData = {
       "content": "Trucks are equipped with all modern passive and active safety systems in order to use the truck in urban areas or on the highways. These systems include collision prevention system, hill hold control, self-adjusting headlights, etc. Moreover, a contemporary truck meets all the requirements concerning driver’s comfort and the ergonomics of the cabin."
     }
   ]
-}
+};

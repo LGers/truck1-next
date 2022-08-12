@@ -1,19 +1,19 @@
 import styles from './Breadcrumbs.module.scss';
-import { catalogData } from '../../___mock___/pagesData';
 import { A } from '../A';
 
-export const Breadcrumbs = () => {
-  const total = catalogData.breadcrumbs.length;
-  const breadcrumbs = catalogData.breadcrumbs.slice(0, total - 1);
-  const lastBreadcrumb = catalogData.breadcrumbs[total - 1];
+export const Breadcrumbs = ({ breadcrumbs }) => {
+  const total = breadcrumbs.length;
+  const firstBreadcrumbs = breadcrumbs.slice(0, total - 1);
+  const lastBreadcrumb = breadcrumbs[total - 1];
 
   return (
     <div className={styles.breadcrumbs}>
       <ul>
-        {breadcrumbs.map((b, idx) => {
+        {firstBreadcrumbs.map((b, idx) => {
+          const href = b.href === '/' ? '/' : `/${b.href}`;
           return (
             <li key={idx}>
-              <A href={b.href} text={b.text} />
+              <A href={href} text={b.text} />
               <div className={styles.arrow}>></div>
             </li>
           )

@@ -1,0 +1,1 @@
+export { TruckSearchBar} from './TruckSearchBar';

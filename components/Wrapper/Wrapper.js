@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from './Wrapper.module.scss';
 import { Header } from '../Header';
+import { Footer } from '../Footer';
 
 export const Wrapper = ({ children, keywords, title, description }) => {
   return (
@@ -15,6 +16,7 @@ export const Wrapper = ({ children, keywords, title, description }) => {
         <div className={styles.container}>
           <Header />
           {children}
+          <Footer />
         </div>
       </div>
     </>
